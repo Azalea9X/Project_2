@@ -1,0 +1,367 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+*{
+ 
+    margin: 0px;
+    padding: 0px;
+      
+    
+}
+
+#image{
+   width: 60%;
+ 
+    height: 100rem;
+    position: relative;
+     
+    left: 20%;
+}
+figure{
+    min-width: 30%; 
+    
+    min-height: 0rem;
+    
+}
+
+img{
+    min-height: 80rem;
+ 
+}
+
+figure{
+    
+     
+    
+
+box-shadow: 5px 2px 2px 2px rgba(.75,0,0,0.75);
+
+}
+
+figcaption{
+    border-top: 1px dashed black; 
+}
+
+
+.dots-navigation .dot {
+    position: relative; 
+    left: 38%;
+    font-size: 200%;
+  } 
+
+html{
+    font-size: 16px;
+}
+
+/*I am ordering the main content here.*/
+.Section{
+ 
+    flex-basis: 30%;
+ min-height: 10em;
+    background-color: chocolate;
+}
+
+.Section-2{
+ 
+    flex-basis: 30%;
+    min-height: 35em;
+    background-color: antiquewhite;
+
+
+}
+
+fig-caption{
+    max-height: 10em;
+    position: absolute; 
+    top: 0; 
+    color: aqua;
+}
+.Section-3{
+ min-height: 10em;
+ 
+        flex-basis:30%;
+    background-color: chocolate;
+}
+ 
+
+.active, .dot:hover{
+    background-color: aqua;
+}
+
+ 
+/*Stylizing how I want the image to look like. I will later use JavaScript to pull from a source of images and then hmm... I need to think about this... I will look up how to do a timer. I have not done anything like this before. */
+
+/* Adding a box shadow and a space for captions.*/
+
+.dot{
+   
+    cursor: pointer; 
+    height: 2.5em; 
+    width: 2.5em; 
+ position: relative; 
+    left: %;
+  
+  
+    display: inline-flex;
+ margin-left: 50px;
+    background-color: darkgrey;
+    border-radius: 50%; 
+ 
+ 
+ 
+    
+ 
+    transition: background-color .6s ease; 
+}
+
+
+
+/*For the slide-show*/
+.slide_container{
+    max-width: 100%; 
+    position: relative;
+    margin: auto; 
+    max-height: 50em;
+}
+
+ 
+.fade{
+   
+            animation-name: fade;
+    animation-duration: 1.5s;     
+    
+}
+
+ 
+@keyframes fadeslide{
+    from{opacity: .4;
+    } 
+    to{opacity: 1;}
+    
+}
+
+.active{
+    background-color: blueviolet;
+}
+
+/*I found out that I can target the glyphicons by using the dot notation for the path and I am targeting the font-size property so that way they can look like larger buttons.*/ 
+ 
+ 
+.glyphicon.glyphicon-arrow-left{
+    font-size: 25rem;
+top: 5%;
+    left: 0%;
+position: absolute;
+    color: blue;
+}
+.glyphicon.glyphicon-arrow-right{
+    font-size: 25rem;
+    top: 5%;
+    left: 85%;
+    position: absolute;
+    color: blue;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Beginning of media queries*/
+@media screen and (max-width: 2200px){
+    .glyphicon.glyphicon-arrow-left{
+    font-size: 14rem !important;
+    font-weight: bold;
+top: 5%;
+    left: 0% !important;
+position: absolute;
+color: blue;
+}
+.glyphicon.glyphicon-arrow-right{
+    position: absolute;
+    font-weight: bold;
+    font-size: 14rem !important;
+    top: 5% !important;
+    left: 93% !important;
+    color: blue;
+    
+} 
+
+.dots-navigation .dot {
+    position: relative; 
+    left: 25%;
+    }
+    #image{
+        min-height: 0%; 
+        height: 65rem;
+         width: 80% !important; 
+        position: relative;
+
+        left: 10% !important;
+        
+    }
+}
+
+@media screen and (max-width: 1900px){
+    .glyphicon.glyphicon-arrow-left{
+    font-size: 10rem !important;
+    font-weight: bold;
+top: 5%;
+    left: 0% !important;
+position: absolute;
+color: blue;
+}
+.glyphicon.glyphicon-arrow-right{
+    position: absolute;
+    font-weight: bold;
+    font-size: 10rem !important;
+    top: 5% !important;
+    left: 92% !important;
+    color: blue;
+    
+} 
+
+.dots-navigation .dot {
+    position: relative; 
+    left: 25%;
+    }
+    #image{
+        min-height: 0%; 
+        height: 65rem;
+         width: 80% !important; 
+        position: relative;
+
+        left: 10% !important;
+        
+    }
+}
+@media screen and (max-width: 1400px){
+    .glyphicon.glyphicon-arrow-left{
+    font-size: 12rem !important;
+    font-weight: bold;
+top: 5%;
+    left: -1% !important;
+position: absolute;
+color: blue;
+}
+.glyphicon.glyphicon-arrow-right{
+    position: absolute;
+    font-weight: bold;
+    font-size: 12rem !important;
+    top: 5% !important;
+    left: 91% !important;
+    color: blue;
+    
+} 
+
+.dots-navigation .dot {
+    position: relative; 
+    left: 25%;
+    }
+    #image{
+        min-height: 0%; 
+        height: 65rem;
+         width: 80% !important; 
+        position: relative;
+
+        left: 10% !important;
+        
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .glyphicon.glyphicon-arrow-left{
+    font-size: 14rem !important;
+    font-weight: bold;
+top: 5%;
+    left: 0% !important;
+position: absolute;
+color: blue;
+}
+.glyphicon.glyphicon-arrow-right{
+    position: absolute;
+    font-weight: bold;
+    font-size: 14rem !important;
+    top: 5% !important;
+    left: 84% !important;
+    color: blue;
+    
+} 
+
+.dots-navigation .dot {
+    position: relative; 
+    left: 15%;
+    }
+    #image{
+        min-height: 0%; 
+        height: 65rem;
+         width: 60% !important; 
+        position: relative;
+        left: 20% !important;
+        
+    }
+}
+
+
+@media screen and (max-width: 801px){
+    .glyphicon.glyphicon-arrow-left{
+    font-size: 12rem !important;
+top: 5%;
+    left: 0%;
+position: absolute;
+color: blue;
+}
+.glyphicon.glyphicon-arrow-right{
+    position: absolute;
+    font-size: 12rem !important;
+    top: 5% !important;
+    left: 84% !important;
+    color: blue;
+    
+} 
+
+.dots-navigation .dot {
+    position: relative; 
+    left: 10%;
+    }
+    #image{
+        min-height: 0%; 
+        height: 65rem;
+        width: 100%;
+        position: relative;
+        left: 0%;
+        
+    }
+}
+ 
